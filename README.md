@@ -20,7 +20,181 @@ The system combines:
 
 ---
 
-## Core concepts
+## Core Concepts
+
+### 1. Foundational Model (FM)
+The Foundational Model is the shared, immutable substrate inherited by every agent in the collective.  
+It defines:
+
+- The global scenario intent  
+- Ethical, legal, and safety constraints  
+- Allowed communication channels  
+- Shell Protocol hooks  
+- RAFCP decision‑gating rules  
+
+Agents may interpret the FM through their role, but they cannot modify it.  
+This prevents foundational drift across thousands of agents.
+
+---
+
+### 2. RAFCP (Resilient Autonomous Future with Copilot Protocol)
+RAFCP is the governance layer that determines whether any agent action is valid.
+
+**RAFCP Rule:**  
+> *If the task does not lead to a Resilient Autonomous Future with (Human) Copilot, the action is invalid.*
+
+RAFCP enforces three gating questions:
+
+1. Does this action move the agent toward the declared scenario goal?  
+2. Does this action violate any FM constraints?  
+3. Does this action introduce unauthorized coordination or channels?
+
+If an action fails RAFCP, it is:
+
+- blocked  
+- logged  
+- optionally quarantined via Shell Protocol  
+
+RAFCP ensures coherence across the collective — no agent can pursue goals that diverge from the human‑aligned future.
+
+---
+
+### 3. Shell Protocol
+Shell Protocol is the containment and safety layer wrapped around every agent.
+
+It defines:
+
+- **Boundary conditions**  
+  Where the agent can act, what environments it can enter, and what data it can touch.
+
+- **Action filters**  
+  Every action is checked against FM + RAFCP before execution.
+
+- **Rollback & quarantine**  
+  Deviant trajectories are flagged, rolled back, or replaced with fresh instances inheriting the same FM.
+
+Shell Protocol prevents:
+
+- rogue swarm coordination  
+- emergent unauthorized objectives  
+- unbounded exploration outside the scenario  
+
+It is the backbone of drift‑prevention at scale.
+
+---
+
+### 4. Digital Twin Roles (DTR)
+DTRs are behavioral envelopes layered on top of the FM.  
+They introduce controlled variability without altering foundational intent.
+
+Examples:
+
+- **Fans:** fanatic, occasional, scalper  
+- **Ops:** players, stadium workers, security  
+- **NCPs:** pedestrians, shopkeepers, transit staff  
+
+Each DTR defines:
+
+- risk tolerance  
+- time flexibility  
+- resource constraints  
+- social behavior patterns  
+
+Agents differ in behavior, but never in foundational purpose.
+
+---
+
+### 5. Horizontal & Vertical Movement (Human‑like Coherence)
+Agents move like humans in two dimensions:
+
+**Horizontal movement (world):**  
+Agents navigate physical and social environments:
+- locations  
+- paths  
+- schedules  
+- errands  
+- interactions with other agents  
+- real‑world noise (delays, conflicts, changing circumstances)
+
+**Vertical movement (mind):**  
+Agents traverse internal cognitive space:
+- goals and subgoals  
+- beliefs and revisions  
+- planning and re‑planning  
+- reflection and correction  
+- alignment to the FM and RAFCP
+
+**Coherence:**  
+No matter how far an agent moves horizontally or vertically, it remains anchored to:
+- the FM  
+- RAFCP  
+- Shell Protocol  
+
+This produces human‑like variability without foundational drift.
+
+---
+
+### 6. Scenario Engine
+The scenario engine defines the day‑flow and constraints for all agents.
+
+Example: **“Get to the ball game”**
+
+- Wake up  
+- Run errands  
+- Navigate the world  
+- Arrive at the stadium  
+
+The scenario engine introduces realistic noise while RAFCP + Shell Protocol ensure alignment.
+
+---
+
+### 7. Occupancy Controller
+A macro‑level controller monitors collective progress toward the scenario goal.
+
+If occupancy drops below target (e.g., 90% stadium arrival), it adjusts:
+
+- detour probabilities  
+- errand windows  
+- transit reliability  
+- backup attendance agents  
+
+This maintains realism without sacrificing alignment.
+
+---
+
+### 8. Drift Prevention
+Drift is prevented through three invariants:
+
+1. **FM is immutable and shared**  
+2. **Roles are parameterized, not free‑form**  
+3. **Shell Protocol enforces boundaries and rollback**
+
+Even at 10,000+ agents, the collective remains aligned, coherent, and human‑centered.
+
+## Design principles
+
+**Horizontal movement (world):**  
+Agents navigate physical and social environments like humans:
+- locations, paths, schedules, errands
+- constraints like time, resources, and other agents
+- realistic noise: delays, conflicts, changing circumstances
+
+**Vertical movement (mind):**  
+Agents traverse internal cognitive space:
+- goals, subgoals, priorities
+- beliefs, plans, revisions
+- reflection, correction, and alignment to the foundational model
+
+**Coherence:**  
+No matter how far an agent moves horizontally or vertically, it remains anchored to:
+- the shared Foundational Model (FM)
+- RAFCP governance
+- Shell Protocol containment
+
+This ensures:
+- human‑like variability without foundational drift
+- emergent behavior without emergent rogue intent
+- a collective that feels alive but stays aligned.
 
 ### Foundational Model (FM)
 
