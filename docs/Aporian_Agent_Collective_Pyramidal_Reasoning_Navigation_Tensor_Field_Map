@@ -1,0 +1,85 @@
+graph TD
+
+    %% ─────────────────────────────────────────────
+    %% NAVIGATION TENSOR FIELD MAP (GLOBAL SPINE)
+    %% ─────────────────────────────────────────────
+    NT[Navigation Tensor Field Map<br/>Spatiotemporal Logic Field]
+
+    %% Sentinel branch
+    S0[Sentinel Agent<br/>Apex Intent]
+    S1[Rule Anchor]
+    S2[Shell Protocol]
+    S3[TVJP Stack]
+    S4[RAFCP Action Filter]
+    S5[Field Coherence]
+    S6[Collapse Handler]
+    S7[Pulse Sync]
+    S8[Cold Vault Isolation]
+
+    S0 --> S1 --> S2 --> S3 --> S4 --> S5 --> S6 --> S7 --> S8
+    NT --- S3
+    NT --- S5
+
+
+    %% Interpreter branch
+    I0[Interpreter Agent<br/>Semantic Intake]
+    I1[Rule Anchor]
+    I2[Shell Protocol]
+    I3[TVJP Parsing Layer]
+    I4[RAFCP Action Filter]
+    I5[Field Coherence]
+    I6[Collapse Handler]
+    I7[Pulse Sync]
+    I8[Cold Vault Isolation]
+
+    I0 --> I1 --> I2 --> I3 --> I4 --> I5 --> I6 --> I7 --> I8
+    NT --- I3
+    NT --- I5
+
+
+    %% Navigator branch
+    N0[Navigator Agent<br/>Routing Intent]
+    N1[Rule Anchor]
+    N2[Shell Protocol]
+    N3[TVJP Routing Layer]
+    N4[RAFCP Action Filter]
+    N5[Field Coherence]
+    N6[Collapse Handler]
+    N7[Pulse Sync]
+    N8[Cold Vault Isolation]
+
+    N0 --> N1 --> N2 --> N3 --> N4 --> N5 --> N6 --> N7 --> N8
+    NT --- N3
+    NT --- N5
+
+
+    %% Builder branch
+    B0[Builder Agent<br/>Constructive Intent]
+    B1[Rule Anchor]
+    B2[Shell Protocol]
+    B3[TVJP Assembly Layer]
+    B4[RAFCP Action Filter]
+    B5[Field Coherence]
+    B6[Collapse Handler]
+    B7[Pulse Sync]
+    B8[Cold Vault Isolation]
+
+    B0 --> B1 --> B2 --> B3 --> B4 --> B5 --> B6 --> B7 --> B8
+    NT --- B3
+    NT --- B5
+
+
+    %% Monitor branch
+    M0[Monitor Agent<br/>Observational Intent]
+    M1[Rule Anchor]
+    M2[Shell Protocol]
+    M3[TVJP Evaluation Layer]
+    M4[RAFCP Action Filter]
+    M5[Field Coherence]
+    M6[Collapse Handler]
+    M7[Pulse Sync]
+    M8[Cold Vault Isolation]
+
+    M0 --> M1 --> M2 --> M3 --> M4 --> M5 --> M6 --> M7 --> M8
+    NT --- M3
+    NT --- M5
