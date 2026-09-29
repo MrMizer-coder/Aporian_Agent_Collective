@@ -1,40 +1,41 @@
 graph TD
-    %% Aporian Pyramidal Reasoning – Agent Collective (Depth Stack)
+    %% Aporian Pyramidal Reasoning – Sentinel Agent Depth Stack
 
     %% Level 0 – Apex Intent
-    A0[Sentinel Agent\n(Apex Intent)]:::sentinel
+    A0[Sentinel Agent<br/>Apex Intent]
 
     %% Level 1 – Rule Anchor Layer
-    A1[Rule Anchor\nRAFCP Constraint Field]:::govern
+    A1[Rule Anchor<br/>RAFCP Constraint Field]
     A0 --> A1
 
     %% Level 2 – Shell Protocol Layer
-    A2[Shell Protocol\nSentinelOps Shell / Boundary Conditions]:::shell
+    A2[Shell Protocol<br/>SentinelOps Shell / Boundary Conditions]
     A1 --> A2
 
     %% Level 3 – TVJP Layer
-    A3[TVJP Stack\n(Temporal–Vector–Judgment–Priority)]:::tvjp
+    A3[TVJP Stack<br/>Temporal–Vector–Judgment–Priority]
     A2 --> A3
 
     %% Level 4 – RAFCP Action Filter
-    A4[RAFCP Action Filter\nPre‑Execution Screening]:::rafcp
+    A4[RAFCP Action Filter<br/>Pre-Execution Screening]
     A3 --> A4
 
     %% Level 5 – Field Coherence
-    A5[Field Coherence\nGlobal Beacon Topology]:::coherence
+    A5[Field Coherence<br/>Global Beacon Topology]
     A4 --> A5
 
     %% Level 6 – Collapse Handler
-    A6[Collapse Handler\nFailover / Contradiction Resolution]:::collapse
+    A6[Collapse Handler<br/>Failover / Contradiction Resolution]
     A5 --> A6
 
     %% Level 7 – Pulse Sync
-    A7[Pulse Sync\nCluster Health Rhythm]:::pulse
+    A7[Pulse Sync<br/>Cluster Health Rhythm]
     A6 --> A7
 
     %% Level 8 – Cold Vault Isolation
-    A8[Cold Vault Isolation\nContainment of Violations]:::isolation
+    A8[Cold Vault Isolation<br/>Containment of Violations]
     A7 --> A8
+
 
     %% Styling
     classDef sentinel fill:#111,stroke:#fff,stroke-width:1px,color:#fff;
